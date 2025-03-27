@@ -58,19 +58,14 @@ footer {
     background-color: #d9b7d7;
     margin-top: auto;
 }
-
-
-
-#sobre { /* mexer nesse*/
+#sobre {
     margin-bottom: 50px;
     padding: 20px;
-    background-color: rgba(146, 107, 122, 0.411); /* Leve fundo para destacar a seção */
+    background-color: rgba(146, 107, 122, 0.411);
     border-radius: 10px;
     width: 100%;
     text-align: center;
 }
-
-
 img {
     width: 100%;
     max-width: 550px;
