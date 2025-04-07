@@ -1,88 +1,128 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+}
+body {
+    background-color: black;
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h1 {
+    color: #D25DA8;
     text-align: center;
 }
-
-header {
-    background: #8B4513;
-    color: #FFD700;
-    padding: 20px 0;
-    font-family: 'Courier', sans-serif;
+.texto p {
+    color: white;
+    text-align: left;
+    margin: 30px 0;
 }
-
-nav a {
-    margin: 0 20px;
-    padding: 10px 20px;
-    background-color: #f89717d0;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
+main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+a {
+    color: white;
+    background-color: rgba(199, 78, 163, 0.9);
+    padding: 12px 35px;
+    border-radius: 3px;
     text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-} 
-nav a:hover {
-    background-color: #8B4513;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+    
 }
-
-.cardapio-duplo {
+a:hover {
+    background-color:  #ff66cc;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+strong {
+    color: rgb(202, 65, 202);
+}
+.sobre {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(146, 107, 122, 0.411);
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+img {
+    width: 100%;
+    max-width: 550px;
+    height: 500px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-top: 60px;
+    margin: 20px;
+    border: 3px solid #555555;
+    box-shadow: 0 4px 10px rgba(233, 10, 122, 0.795);
+}
+.container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    max-width: 1000px;
+    align-items: center;
+    gap: 30px;
 }
-.cardapio-duplo section {
-    flex: 1;
-    min-width: 280px;
-    background-color: #f89717d0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.texto {
+    margin-right: 20px;
 }
-
-section {
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #f89717d0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+.contato {
+    margin: 20px 0;
+    padding: 30px;
+    background-color: rgba(146, 107, 122, 0.411);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
 }
-
-.gallery img {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
-    border-radius: 5px;
-}
-
-.social-buttons a {
-    text-decoration: none;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #8B4513;
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-.social-buttons a:hover {
-    background-color: #f89717d0;
-}
-
-.phone-button {
-    display: inline-block;
-    padding: 10px;
-    background-color: #28a745;
+.contato p {
+    font-size: 1.1rem;
     color: white;
-    border-radius: 5px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(146, 107, 122, 0.411);
+}
+header .login a {
+    color: white;
+    background-color: rgba(199, 78, 163, 0.9);
+    padding: 12px 35px;
+    border-radius: 3px;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-right: 20px;
+    transition: all 0.3s ease;
 }
-.phone-button:hover {
-    background-color: #64f340d0;
+header .login a:hover {
+    background-color: #ff66cc;
+    transform: scale(1.1);
 }
-
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    color: rgb(184, 38, 118);
+    text-align: center;
+    padding: 20px;
+    background-color: #d9b7d7;
+    margin: 20px;
+}
